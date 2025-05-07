@@ -35,7 +35,7 @@ const CreatePage = () => {
   return (
     <Container maxW={"container.sm"}>
       <VStack spacing={8}>
-        <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8}>
+        <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8} color={useColorModeValue("#1B2D52", "#9FB0E8")} fontWeight={"bold"}>
           Create new Product
         </Heading>
 
@@ -46,7 +46,7 @@ const CreatePage = () => {
           rounded={"lg"}
           shadow={"md"}
         >
-          <VStack spacing={4}>
+          <VStack spacing={4} color={useColorModeValue("#1B2D52", "#9FB0E8")}>
             <Input
               placeholder="Product Name"
               name="name"
@@ -72,7 +72,7 @@ const CreatePage = () => {
               }
             />
 
-            <Button colorScheme="blue" w="full" onClick={handleAddProduct}>
+            <Button color={useColorModeValue("gray.200", "gray.200")} bg={useColorModeValue("#1B2D52", "#9FB0E8")}w="full" onClick={handleAddProduct}>
               Add Product
             </Button>
           </VStack>

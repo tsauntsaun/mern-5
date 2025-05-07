@@ -10,8 +10,9 @@ import React from "react";
 import { useEffect } from "react";
 import { useProductStore } from "../store/product";
 import ProductCard from "../components/ProductCard";
+import { useColorModeValue } from "../components/ui/color-mode";
 
-const DecorativeBox = ({ height = "20" }) => {
+const DecorativeBox = ({ height = "20" }) => {//???????????
   return <Box height={height} rounded="md" shadow="md" />;
 };
 const HomePage = () => {
@@ -23,7 +24,7 @@ const HomePage = () => {
   return (
     <Container maxW="container.xl" py={12}>
       <VStack spacing={8}>
-        <Text fontSize="4xl">Current Products</Text>
+        <Text fontSize="4xl"color={useColorModeValue("#1B2D52", "#9FB0E8")} fontWeight={"bold"}>Current Products</Text>
         <SimpleGrid
           columns={{
             base: 1,

@@ -2,6 +2,7 @@ import { Button, Container, Flex, HStack, Text, Link } from "@chakra-ui/react";
 import { FaFaceGrin, FaRegMoon, FaRegSun } from "react-icons/fa6";
 import React from "react";
 import { useColorMode } from "./ui/color-mode";
+import { useColorModeValue } from "./ui/color-mode";
 
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -18,14 +19,12 @@ const Navbar = () => {
         }}
       >
         <Text
-          fontSize={{ base: "22", sm: "28" }} // not sure if working
+          fontSize={{ base: "22", sm: "28" }} 
           fontWeight={"bold"}
           textTransform={"uppercase"}
           textAlign={"center"}
-          bgGradient={"linear(to-r, cyan.400, blue.500)"} // does not work
-          bgClip={"text"}
         >
-          <Link href={"/"}>Product Store</Link>
+          <Link color={useColorModeValue("#1B2D52", "#9FB0E8")} href={"/"}>Product Store</Link>
         </Text>
         <HStack spacing={2} alignItems={"center"}>
           <Link href={"/create"}>

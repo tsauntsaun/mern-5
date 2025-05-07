@@ -4,6 +4,8 @@ import App from "./App.jsx";
 import { Provider } from "./components/ui/provider";
 import { BrowserRouter } from "react-router";
 
+
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>

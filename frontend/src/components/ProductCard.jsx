@@ -19,8 +19,8 @@ import { toast } from "sonner";
 import { useState } from "react";
 
 const ProductCard = ({ product }) => {
-  const textColor = useColorModeValue("gray.200", "#1B2D52");
-  const bg = useColorModeValue("#9FB0E8", "gray.200");
+  const textColor = useColorModeValue("gray.200", "gray.200");
+  const bg = useColorModeValue("#9FB0E8", "#1B2D52");
 
   const { deleteProduct, updateProduct } = useProductStore();
 
@@ -72,7 +72,7 @@ const ProductCard = ({ product }) => {
         w="full"
         objectFit="cover"
       />
-      <Box p={4}>
+      <Box p={4} color={useColorModeValue("#1B2D52", "#9FB0E8")}>
         <Heading as="h3" size="2xl" mb={2}>
           {product.name}
         </Heading>
@@ -82,7 +82,7 @@ const ProductCard = ({ product }) => {
         <HStack spacing={2}>
           <Dialog.Root>
             <Dialog.Trigger asChild>
-              <Button>
+              <Button color={useColorModeValue("gray.200", "gray.200")} bg={useColorModeValue("#1B2D52", "#9FB0E8")}>
                 <FaFeather />
               </Button>
             </Dialog.Trigger>
@@ -136,7 +136,7 @@ const ProductCard = ({ product }) => {
                     <Dialog.ActionTrigger asChild>
                       <Button variant="outline">Cancel</Button>
                     </Dialog.ActionTrigger>
-                    <Button colorScheme="blue" onClick={handleSave}>
+                    <Button  onClick={handleSave}>
                       Save
                     </Button>
                   </Dialog.Footer>
@@ -148,7 +148,7 @@ const ProductCard = ({ product }) => {
               </Dialog.Positioner>
             </Portal>
           </Dialog.Root>
-          <Button onClick={() => handleDeleteProduct(product._id)}>
+          <Button color={useColorModeValue("gray.200", "gray.200")} bg={useColorModeValue("#1B2D52", "#9FB0E8")} onClick={() => handleDeleteProduct(product._id)}>
             <FaRegTrashCan />
           </Button>
         </HStack>

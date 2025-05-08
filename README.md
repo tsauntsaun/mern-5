@@ -7,8 +7,13 @@ _Tim Saunders, Mia Altimirano, James Perez_
 ### Team Member Names + Roles:
 
 **Tim Saunders**: Backend, Frontend, Presentation/Documentation
+
 **Mia Altimirano**: Backend, Database, Presentation/Documentation
+
 **James Perez**: Database, Frontend, Presentation/Documentation
 
 USERNAME: admin
+
 PASSWORD: WebDev4Life!
+
+You must

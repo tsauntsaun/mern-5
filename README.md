@@ -2,7 +2,7 @@
 
 _Tim Saunders, Mia Altimirano, James Perez_
 
-## [Watch the YouTube video here](https://www.example.com)
+## [Watch the YouTube video here](https://youtu.be/u_JJ7l4NZuQ)
 
 ### Team Member Names + Roles:
 

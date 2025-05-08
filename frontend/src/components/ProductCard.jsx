@@ -12,7 +12,7 @@ import {
   Dialog,
   Span,
 } from "@chakra-ui/react";
-import { FaRegTrashCan, FaFeather } from "react-icons/fa6";
+import { FaRegTrashCan, FaFeather, FaRegPenToSquare } from "react-icons/fa6";
 import { useColorModeValue } from "./ui/color-mode";
 import { useProductStore } from "../store/product";
 import { toast } from "sonner";
@@ -64,6 +64,8 @@ const ProductCard = ({ product }) => {
       transition="all 0.3s"
       _hover={{ transform: "translateY(-5px)", shadow: "xl" }}
       bg={bg}
+      m={4}
+      p={2}
     >
       <Image
         src={product.image}
@@ -72,7 +74,7 @@ const ProductCard = ({ product }) => {
         w="full"
         objectFit="cover"
       />
-      <Box p={4} color={useColorModeValue("#1B2D52", "#9FB0E8")}>
+      <Box color={useColorModeValue("#1B2D52", "#9FB0E8")}>
         <Heading as="h3" size="2xl" mb={2}>
           {product.name}
         </Heading>
@@ -82,8 +84,11 @@ const ProductCard = ({ product }) => {
         <HStack spacing={2}>
           <Dialog.Root>
             <Dialog.Trigger asChild>
-              <Button color={useColorModeValue("gray.200", "gray.200")} bg={useColorModeValue("#1B2D52", "#9FB0E8")}>
-                <FaFeather />
+              <Button
+                color={useColorModeValue("gray.200", "gray.200")}
+                bg={useColorModeValue("#1B2D52", "#9FB0E8")}
+              >
+                <FaRegPenToSquare />
               </Button>
             </Dialog.Trigger>
 
@@ -136,9 +141,7 @@ const ProductCard = ({ product }) => {
                     <Dialog.ActionTrigger asChild>
                       <Button variant="outline">Cancel</Button>
                     </Dialog.ActionTrigger>
-                    <Button  onClick={handleSave}>
-                      Save
-                    </Button>
+                    <Button onClick={handleSave}>Save</Button>
                   </Dialog.Footer>
 
                   <Dialog.CloseTrigger asChild>
@@ -148,7 +151,11 @@ const ProductCard = ({ product }) => {
               </Dialog.Positioner>
             </Portal>
           </Dialog.Root>
-          <Button color={useColorModeValue("gray.200", "gray.200")} bg={useColorModeValue("#1B2D52", "#9FB0E8")} onClick={() => handleDeleteProduct(product._id)}>
+          <Button
+            color={useColorModeValue("gray.200", "gray.200")}
+            bg={useColorModeValue("#1B2D52", "#9FB0E8")}
+            onClick={() => handleDeleteProduct(product._id)}
+          >
             <FaRegTrashCan />
           </Button>
         </HStack>

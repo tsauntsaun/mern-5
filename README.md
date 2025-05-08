@@ -12,11 +12,10 @@ _Tim Saunders, Mia Altimirano, James Perez_
 \
 **James Perez**: Database, Frontend, Presentation/Documentation
 
-**Use the credentials below to access the app's functions:**
-<br>
-USERNAME: admin
-<br>
-PASSWORD: WebDev4Life!
-
 ## Starting from the terminal:
 Use `npm run dev` in both the backend and frontend folders to start the application, and access it by visiting your localhost port 5173.
+
+## Loggin in:
+Use the credentials below to log in and access the app's functions:
+**USERNAME**: admin
+**PASSWORD**: WebDev4Life!

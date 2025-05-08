@@ -12,8 +12,8 @@ _Tim Saunders, Mia Altimirano, James Perez_
 
 **James Perez**: Database, Frontend, Presentation/Documentation
 
+**Use the credentials below to access the app's functions:**
+
 USERNAME: admin
-
+<br>
 PASSWORD: WebDev4Life!
-
-You must

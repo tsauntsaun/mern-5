@@ -17,5 +17,7 @@ Use `npm run dev` in both the backend and frontend folders to start the applicat
 
 ## Loggin in:
 Use the credentials below to log in and access the app's functions:
+\
 **USERNAME**: admin
+\
 **PASSWORD**: WebDev4Life!

@@ -19,5 +19,5 @@ USERNAME: admin
 PASSWORD: WebDev4Life!
 
 ## Starting from the terminal:
-\
+
 Use `npm run dev` in both the backend and frontend folders to start the application, and access it by visiting your localhost port 5173.

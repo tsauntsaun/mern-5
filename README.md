@@ -15,7 +15,7 @@ _Tim Saunders, Mia Altimirano, James Perez_
 ## Starting from the terminal:
 Use `npm run dev` in both the backend and frontend folders to start the application, and access it by visiting your localhost port 5173.
 
-## Loggin in:
+## Logging in:
 Use the credentials below to log in and access the app's functions:
 \
 **USERNAME**: admin
